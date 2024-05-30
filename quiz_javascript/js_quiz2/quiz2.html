@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <style>
         code {
             display: inline-block;
@@ -20,7 +23,7 @@
             font-family: 'Noto Sans Mono', monospace;
             font-weight: 500;
         }
-        
+
         p {
             padding: 10px 20px;
             background-color: rgb(248, 255, 230);
@@ -32,6 +35,7 @@
         }
     </style>
 </head>
+
 <body>
     <h1>퀴즈2. 수업이 끝났나요?</h1>
     <div>* HTML의 script 태그 안에 미리 구조가 정의되어 있는 함수를 조건에 맞게 수정해주세요!</div>
@@ -43,20 +47,30 @@
         <li>
             함수 호출 예시:
             <img src="./image/quiz4.png" alt="보기" />
-          </li>
+        </li>
     </ul>
     <p>(힌트) 만약 ~ 그렇지 않다면 ~ 같은 단어에 해당하는 자바스크립트 키워드를 생각해보세요!</p>
 
     <script>
-        function isDone() {
+        function isDone(time) {
             // TODO: 조건을 만족하는 isDone 함수를 작성해주세요.
+            if (time >= 16) {
+                return true;
+            } else {
+                return false;
+            }
         }
-        
+
         // TODO: 해당 html 파일을 실행한 브라우저 콘솔창에서 isDone 함수를 호출해주세요!
-        // isDone(9);
-        // isDone(14);
-        // isDone(16);
-        // isDone(20);
+        // isDone(9)
+        // false
+        // isDone(14)
+        // false
+        // isDone(16)
+        // true
+        // isDone(20)
+        // true
     </script>
 </body>
+
 </html>
